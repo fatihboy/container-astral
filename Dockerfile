@@ -3,7 +3,7 @@ FROM composer:1.10.19 as composer
 RUN git clone https://github.com/astralapp/astral.git
 WORKDIR astral
 
-RUN git checkout 38d98ef && \
+RUN git checkout 6f5b706 && \
     composer install
 
 FROM node:14.17-alpine3.14 as node
